@@ -20,19 +20,19 @@ while running:
 
     # Ekraani värv
     screen.fill((0, 0, 0))
-    
-    # Ristküliku ja ringide suurused ja värvid
-    pygame.draw.rect(screen, [129, 126, 127], [100, 10, 100, 270], 2)
-    #rect_color = (140, 140, 140)
-    
-    # Ristkülik (vaid ümbritsev joon)
-    #rect = pygame.Rect((screen_size[0] - rect_size[0]) // 2, (screen_size[1] - rect_size[1]) // 2, *rect_size)
-    #pygame.draw.rect(screen, rect_color, rect, 2)  # 1 tähendab joone laiust
 
     # Ringid (täidetud)
-    pygame.draw.circle(screen, [255, 0, 0], [150, 60], 40)
-    pygame.draw.circle(screen, [255, 255, 0], [150, 145], 40)
-    pygame.draw.circle(screen, [0, 255, 0], [150, 230], 40)
+    pygame.draw.circle(screen, [255, 255, 255], [150, 80], 30)
+    pygame.draw.circle(screen, [255, 255, 255], [150, 145], 40)
+    pygame.draw.circle(screen, [255, 255, 255], [150, 230], 50)
+    
+    # silmad
+    pygame.draw.circle(screen, [0, 0, 0], [140, 80], 5)
+    pygame.draw.circle(screen, [0, 0, 0], [160, 80], 5)
+    
+    # ninnu
+    #pygame.draw.polygon(screen, [255, 51, 0], [150, 80])
+        
 
     # Ekraani värskendamine
     pygame.display.flip()
@@ -40,4 +40,5 @@ while running:
 # Pygame sulgemine
 pygame.quit()
 sys.exit()
+
 
