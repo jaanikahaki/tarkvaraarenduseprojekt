@@ -26,7 +26,7 @@ while running:
 
     # Ristkülik (vaid ümbritsev joon)
     rect = pygame.Rect((screen_size[0] - rect_size[0]) // 2, (screen_size[1] - rect_size[1]) // 2, *rect_size)
-    pygame.draw.rect(screen, rect_color, rect, 1)  # 1 tähendab joone laiust
+    pygame.draw.rect(screen, rect_color, rect, 2)  # 1 tähendab joone laiust
 
     # Ringid (täidetud)
     pygame.draw.circle(screen, (255, 0, 0), (150, 60), 40)
