@@ -14,7 +14,7 @@ pygame.display.set_caption("Foor - Jaanika Haki")  # määrame Pygame aknale nim
 # Peamine mängutsükkel
 running = True    # muutuja running loomine
 while running:    # algab lõpmatu tsükkel, mis kestab kuni running = True
-    for event in pygame.event.get():   # 
+    for event in pygame.event.get():   # tsükkel mis käib läbi kõik kasutaja poolsed sündmused (nt akna sulgemise)
         if event.type == pygame.QUIT:  # kui kasutaja sulgeb Pygame abil loodud akna...
             running = False   # siis Pygame katkestab akna tsükli
 
